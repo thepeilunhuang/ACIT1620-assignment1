@@ -80,17 +80,16 @@ footer{
     list-style-type: none;
 }
 
-@media screen and (min-width:400){
-    body{
-        display: flex;
-    }
+@media screen and (min-width:480px){ 
+/* Fixed web screen responsive design */
     .menu{
         width: 20%;
         height: 100vh;
-        
+        float: left; 
     }
     .note{
         width: 80%;
         height: 100vh;
+        float: left;
     }
 }
