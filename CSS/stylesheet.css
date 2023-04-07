@@ -15,10 +15,14 @@ h1{
     color: #F2EBD9;
     width: 20%;
     min-height: 100vh;
-    
+
     position: fixed;
     float: left; 
     /* add position: fixed and float: left to make sure .menu section keeps on left */
+}
+.menu.dark_theme{
+    background-color: #3E2324;
+    color: #E8DCC0;
 }
 .menu ul{
     padding:2vh 0 0 0;
@@ -40,6 +44,10 @@ h1{
     grid-template-rows: 3fr 1fr 2fr 6fr 2fr 8fr;
     grid-template-columns: 1fr 16fr 1fr 1fr;
     position: relative;
+}
+.note.dark_theme{
+    background-color: #E8DCC0;
+    color: #3E2324;
 }
 button{
     max-height: 3rem;
@@ -70,11 +78,19 @@ button{
     grid-row: 3/4;
     grid-column: 4/5;
 }
-textarea{
+textarea {
     grid-row: 4/5;
     grid-column: 1/5;
     margin: 12px;
     min-height: 200px;
+}
+textarea.dark_theme{
+    grid-row: 4/5;
+    grid-column: 1/5;
+    margin: 12px;
+    min-height: 200px;
+    background-color: gray;
+    color: whitesmoke;
 }
 .save{
     grid-row: 5/6;
