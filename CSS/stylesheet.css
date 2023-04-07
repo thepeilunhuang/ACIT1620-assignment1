@@ -119,6 +119,9 @@ footer{
     justify-content: center;
     list-style-type: none;
 }
+.hid{
+    display: none;
+}
 
 @media screen and (min-width:480px){ 
     /* fixed media query problem: add 'px'   */

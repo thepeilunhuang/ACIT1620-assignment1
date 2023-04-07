@@ -1,6 +1,6 @@
 const menu = document.querySelector('.menu');
 const note = document.querySelector('.note');
-const textarea = document.querySelector('textarea')
+const textarea = document.querySelector('.textarea')
 const darkThemeButton = document.querySelector('.dark_theme');
 
 darkThemeButton.addEventListener('click', () => {
@@ -18,4 +18,14 @@ themeToggle.addEventListener('click', () => {
   } else {
     themeToggle.textContent = 'Dark Theme';
   }
+});
+
+const cancelB = document.querySelector('.cancel');
+const saveB = document.querySelector('.save');
+const text = document.querySelector('.textarea');
+
+cancelB.addEventListener('click', () =>{
+    text.classList.add('hid');
+    saveB.classList.add('hid');
+    cancelB.classList.add('hid');
 });
