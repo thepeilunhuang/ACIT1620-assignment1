@@ -1,44 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family:'Tangerine', 'cursive';
+    font-family: 'Roboto', sans-serif;
 }
 
 h1{
     text-align: center;
     padding: 3vh 0 0 0;
+    font-size: 1.2rem;
 }
 .menu{
     background-color:#66363C;
     color: #F2EBD9;
+    width: 20%;
+    min-height: 100vh;
+    
+    position: fixed;
+    float: left; 
+    /* add position: fixed and float: left to make sure .menu section keeps on left */
 }
 .menu ul{
-    padding:1vh 0 0 0;
-    list-style-type: square;
-    font-size: 2rem;
+    padding:2vh 0 0 0;
+    font-size: 0.8rem;
     text-align: center;
+    list-style-type: square;
 }
+.menu li{
+    margin-top: 1rem;
+}
+
 .note{
+    width: 80%;
+    min-height: 100vh;
+    float: right;
     background-color: #F2EBD9;
     color: #66363C;
     display: grid;
     grid-template-rows: 3fr 1fr 2fr 6fr 2fr 8fr;
     grid-template-columns: 1fr 16fr 1fr 1fr;
+    position: relative;
 }
 button{
+    max-height: 3rem;
+    min-width: 3rem;
     margin: 12px;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #66363C;
     color:#F2EBD9;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .note h1{
     grid-row: 1/2;
     grid-column: 1/5;
 }
+.note h2{
+    font-size: 0.8rem;
+}
 .note h3{
+    font-size: 1rem;
     grid-row: 2/3;
     grid-column: 4/5;
 }
@@ -54,6 +74,7 @@ textarea{
     grid-row: 4/5;
     grid-column: 1/5;
     margin: 12px;
+    min-height: 200px;
 }
 .save{
     grid-row: 5/6;
@@ -67,7 +88,10 @@ textarea{
 footer{
     grid-row: 6/7;
     grid-column: 1/5;
-    text-align: center;
+
+    position: absolute;
+    bottom: 10vh;
+    right:40%;
 }
 .note img{
     width: 20px;
@@ -81,15 +105,11 @@ footer{
 }
 
 @media screen and (min-width:480px){ 
-/* Fixed web screen responsive design */
-    .menu{
-        width: 20%;
-        height: 100vh;
-        float: left; 
-    }
-    .note{
-        width: 80%;
-        height: 100vh;
-        float: left;
+    /* fixed media query problem: add 'px'   */
+    footer{
+        position: absolute;
+        top: 12vh;
+        text-align: center;
+        left:40%;
     }
 }
