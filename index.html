@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/stylesheet.css" />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
     <div class="menu">
       <h1>My Notes</h1>
-      <ul>
-        <li>note one</li>
-        <li>note two</li>
-      </ul>
+      <ul class="notes"></ul>
     </div>
     <div class="note">
       <h1>Take Better Notes</h1>
@@ -21,6 +19,7 @@
       <button class="new_note">New Note</button>
       <button class="dark_theme">Dark Theme</button>
       <textarea
+        class="textarea"
         cols="30"
         rows="10"
         placeholder="This is a placeholder"
