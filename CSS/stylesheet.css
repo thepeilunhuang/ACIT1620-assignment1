@@ -126,6 +126,10 @@ footer{
     display: block;
 }
 
+.menu li{
+    cursor: pointer;
+}
+
 @media screen and (min-width:480px){ 
     /* fixed media query problem: add 'px'   */
     footer{
